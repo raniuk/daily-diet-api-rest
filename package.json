@@ -1,0 +1,39 @@
+{
+  "name": "daily-diet-api-rest",
+  "version": "1.0.0",
+  "description": "Daily diet API with nodejs",
+  "main": "index.js",
+  "author": "Adalid <ren.webmobile@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+    "lint": "eslint src --ext .ts --fix",
+    "build": "tsup src --out-dir build",
+    "test": "vitest run --dir src/application/usecases",
+    "test:e2e": "vitest run --dir src/infrastructure/controllers"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "@fastify/jwt": "^8.0.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.1",
+    "fastify": "^4.25.2",
+    "knex": "^3.1.0",
+    "pg": "^8.11.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.11.6",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^8.56.0",
+    "supertest": "^6.3.4",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1"
+  },
+  "repository": "https://github.com/raniuk/daily-diet-api-rest.git"
+}

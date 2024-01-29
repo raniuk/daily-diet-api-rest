@@ -1,0 +1,10 @@
+# Folders or files
+node_modules
+build
+coverage
+.env
+
+# Locks
+package-lock.json
+yarn.lock
+yarn-error.log
