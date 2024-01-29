@@ -62,3 +62,21 @@ yarn dev
 
 npm run dev
 ```
+
+## Tests
+
+Test use cases
+
+```sh
+yarn test
+
+npm run test
+```
+
+Test end to end
+
+```sh
+yarn test:e2e
+
+npm run test:e2e
+```
